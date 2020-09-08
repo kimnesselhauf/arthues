@@ -1,1 +1,208 @@
 // Specific CSS for your home-page
+.banner {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 100px 0 60px 0;
+  font-family: 'Nunito',Helvetica, sans-serif;
+  // font-family: 'Comic Neue', cursive;
+  // font-weight: 600;
+  // font-family: 'Amatic SC', cursive;
+  // font-family: 'Cutive Mono', monospace;
+  // font-family: 'Mr De Haviland', cursive;
+  // font-family: 'Special Elite', cursive;
+  // font-family: 'Playfair Display', serif;
+  // font-family: 'Gayathri', sans-serif;
+  // font-family: 'Open Sans Condensed', sans-serif;
+
+  // font-family: 'Delius Unicase', cursive;
+  // font-family: 'Dekko', cursive;
+  // font-family: 'Questrial', sans-serif;
+}
+
+.container{
+  padding-top: 20px;
+  margin-top: 200px;
+  margin-right: -240px;
+  color:white;
+  // color: #235053;
+  // color: #88845A;
+
+  p{
+    margin-top: 0px;
+    padding-left: 5px;
+    margin-bottom:15px;
+    opacity: 100%;
+    color:white;
+    // color:#235053;
+    font-size: 30px;
+    font-weight: 100px;
+    font-family: 'Nunito',Helvetica, sans-serif;
+
+  }
+
+  h3{
+    font-family: 'Nunito',Helvetica, sans-serif;
+    // font-family: Helvetica;
+    // font-size:30px;
+    // font-family: 'Cutive Mono', monospace;
+    // font-family: 'Mr De Haviland', cursive;
+    // font-family: 'Special Elite', cursive;
+    // font-family: 'Playfair Display', serif;
+    // font-family: 'Gayathri', sans-serif;
+    // font-family: 'Open Sans Condensed', sans-serif;
+    // font-family: 'Kavivanar', cursive;
+    // font-family: 'Comic Neue', cursive;
+    // font-family: 'Amatic SC', cursive;
+  }
+}
+
+.block-1{
+  padding: 70px 70px 50px 70px;
+  text-align: center;
+  height:350px;
+  background-color: white;
+  h1{
+    margin: 20px 0 20px 0;
+  }
+}
+
+.block-2{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.block-3{
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+
+.team-img{
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #AAB4CD;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.block-2:hover .overlay {
+  width: 45%;
+  left: 55%;
+}
+
+.overlay-home-app{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 100%;
+  background-color: #AAB4CD;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.block-3:hover .overlay-home-app {
+  width: 45%;
+  left: 0;
+}
+
+.overlay-contact{
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  right: 0;
+  background-color: #AAB4CD;
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: .5s ease;
+}
+
+.block-2:hover .overlay-contact {
+  width: 100%;
+  left: 0;
+}
+
+
+.text-about-us{
+  h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:17px;
+  }
+  // white-space: nowrap;
+   color: white;
+  // font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  // -ms-transform: translate(-50%, -50%);
+}
+
+.in-block-left{
+  // background-color: #008D8C;
+  height: 400px;
+  width: 55%;
+  color:white;
+  text-align: center;
+}
+
+.in-block-right{
+  // background-color: pink;
+  height: 400px;
+  width: 45%;
+  color:white;
+  text-align: center;
+  h1{
+    margin-top: 25%;
+  }
+}
+
+.text-contact{
+  color: white;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  // h3{
+  // font-size: 20px;
+  // align-items: center;
+  // justify-content: space-evenly;
+  // }
+  // white-space: nowrap;
+}
+
+.contact-flex{
+  display: flex;
+}
+
+.mySlides{
+  display: block;
+  object-fit: cover;
+  height: 400px;
+  width: 100%;
+}
+
