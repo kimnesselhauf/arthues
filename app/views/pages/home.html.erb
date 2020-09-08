@@ -1,2 +1,106 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: url('<%= image_path "banner-6.jpg" %>');">
+  <div class="container">
+    <h3 style="font-size: 120px; margin-bottom: 0px">ART´hüs</h3>
+    <p> <strong>- Wilkommen in Westerland auf Sylt -</strong></p>
+        <button class="home-app-btn"><a href="http://visitenkarten.im-web.de/55004/belegung.php" target="_blank">Verfügbarkeit prüfen</a></button>
+  </div>
+</div>
+
+<div class="block-1">
+      <p style="color: #A39EA9;"><strong>______________</strong></p>
+      <h1>
+        <strong>Zentrale Lage zu Strand und Stadt</strong>
+      </h1>
+      <p style="text-align: center; margin: 0 200px 20px 200px; font-size: 20px; opacity: 70%">Das ART'hüs ist in zentraler Lage Westerlands, ca. 500 m zum Strand am Ende
+          der Straße und auch nur ca. 300 m vom Zentrum entfernt.
+          Bushaltestelle ist vor der Tür.</p>
+      <button class="home-app-btn"><a href="http://visitenkarten.im-web.de/55004/belegung.php" target="_blank">Verfügbarkeit prüfen</a></button>
+  </div>
+
+  <div class="block-2">
+    <div class="in-block-left" >
+      <%= image_tag("strand-2.jpg", :alt => "this is our team", :class => "team-img") %>
+    </div>
+    <div class="in-block-right" style="background-color: #F6E9E8">
+      <h1 style="position: center; color: #6E5F5E; font-size: 40px;">Über uns</h1>
+    </div>
+    <div class="overlay">
+      <div class="text-about-us">
+        <h3 class="text-break">Das ART'hüs wurde im Sommer 2002 eröffnet. Wir sind ein modernes und farbenfrohes Haus, welches eine Verbindung von Ferienwohnungen mit wechselnden Kunstausstellungen bietet. In allen Wohnungen hängen ausschließlich Unikate von Vertretern der "Modern Art".</h3>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-1">
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+      <h1 style="font-size: 25px; opacity: 70%">Im ART'hüs präsentieren wir Ihnen ständig wechselnde <strong>Kunstausstellungen</strong> und in allen Wohnungen hängen ausschließlich Unikate.
+      </h1>
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+  </div>
+
+  <div class="block-3">
+    <div class="in-block-right" style="background-color: #A39EA9;">
+      <h1 style="position: center;">Unsere Appartments</h1>
+    </div>
+    <div class="in-block-left">
+      <title>W3.CSS</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <style>
+      .mySlides {display:none}
+      .w3-left, .w3-right, .w3-badge {cursor:pointer}
+      .w3-badge {height:13px;width:13px;padding:0}
+      </style>
+      <div class="w3-content w3-display-container" style="max-width:800px">
+        <%= image_tag("app-3.jpeg", :alt => "see what we do",  :class => "mySlides") %>
+        <%= image_tag("app-4.jpg", :alt => "see what we do", :class => "mySlides") %>
+        <%= image_tag("app-8.jpg", :alt => "see what we do",  :class => "mySlides") %>
+        <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+          <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+          <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>
+      </div>
+      <!-- <script src="appSlideshow.js"></script> -->
+    </div>
+    <div class="overlay-home-app">
+      <div class="text-about-us">
+        <h3 class="text-break">In unseren 8 Appartments mit Platz für 1-4 Personen können Sie sich wie Zuhause fühlen.</h3>
+        <button class="home-app-btn" ><%= link_to "Zu den Appartments", appartments_index_path %></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-1">
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+      <h1 style="font-size: 25px; opacity: 70%">Das ART'hüs ist besonders
+        <strong>kinderfreundlich</strong> und freut sich über alle kleinen Gäste. Ob bei Sonne auf dem Trampolin im Garten oder bei Regen im Spielzimmer. Bei uns hat man immer Spaß.
+      </h1>
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+  </div>
+
+  <div class="block-2">
+    <div class="in-block-left">
+      <%= image_tag("banner-5.jpg", :alt => "this is our team", :class => "team-img") %>
+    </div>
+    <div class="in-block-right" style="background-color: #F6E9E8">
+      <h1 style="position: center;color: #6E5F5E; font-size: 40px;">KONTAKT</h1>
+    </div>
+    <div class="overlay-contact">
+      <div class="text-contact">
+        <div class="contact-flex">
+          <p>Möchten Sie weitere Informationen anfordern oder uns eine Buchungsanfrage zukommen lassen? Rufen Sie uns einfach an oder schreiben Sie eine <%= link_to "E-mail", contacts_new_path, class: "nav-link"%>.</p>
+              </%>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="block-1">
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+      <h1 style="font-size: 25px; opacity: 70%">Wir freuen uns Sie schon bald bei uns <strong>Wilkommen</strong> zu heißen.
+      </h1>
+      <p style="color: #A39EA9"><strong>______________</strong></p>
+  </div>
