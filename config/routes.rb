@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'informations/about'
+  get 'informations/prices'
+  get 'informations/location'
   get 'contacts/new'
   get 'contacts/create'
   get 'appartmentnumbers/one'
