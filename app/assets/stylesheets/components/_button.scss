@@ -1,0 +1,20 @@
+button.home-app-btn{
+    border-radius: 20px;
+      // background-color: #235053;
+      // background-color: #FFC45F;
+      background-color: #7B8AB7;
+      border: none;
+      opacity:100%;
+      a{
+        padding: 10px;
+        border-radius: 4px;
+        color: white;
+        font-weight: 200;
+        font-size: 20px;
+        opacity: 100%;
+        text-decoration: none;
+      }
+  }
+  .home-app-btn:hover{
+    opacity:90%;
+  }
